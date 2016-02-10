@@ -1,7 +1,7 @@
 {
   "name": "gulp-template",
   "version": "0.1.1",
-  "description": "gulp with webpack",
+  "description": "gulp with browserify",
   "dependencies": {
     "gulp-concat": "^2.6.0",
     "gulp-less": "^3.0.3",
@@ -10,8 +10,23 @@
     "jquery": "^2.1.4",
     "require-dir": "^0.3.0"
   },
+  "browserify": {
+    "transform": [
+      "vueify"
+    ]
+  },
   "devDependencies": {
+    "babel-core": "^6.5.1",
+    "babel-plugin-transform-runtime": "^6.5.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-runtime": "^5.8.35",
+    "browserify": "^13.0.0",
+    "gulp-browserify": "^0.5.1",
     "gulp-debug": "^2.1.2",
-    "gulp-sass": "^2.0.4"
+    "gulp-sass": "^2.0.4",
+    "vinyl-transform": "^1.0.0",
+    "vue-hot-reload-api": "^1.3.2",
+    "vueify": "^8.3.5",
+    "vueify-insert-css": "^1.0.0"
   }
 }

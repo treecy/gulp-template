@@ -15,11 +15,11 @@ var config = {
         }
     },
     js: {
-        'jade_src': src + "**/*.scss",
+        'browserifySrc': src + "**/main.js",
         'dest': dest + '/static/js',
-        'pkg_dest': dest + '/static/js/pkg',
+        'pkgDest': dest + '/static/js/pkg',
         'packages': {
-            'js-vendor': [
+            'jsVendor': [
                 dest + '/static/js' + '/vendor/**/jquery*.js',
                 dest + '/static/js' + '/vendor/**/!(jquery)*.js'
             ]

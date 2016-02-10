@@ -1,5 +1,5 @@
 var gulp = require('gulp');
 
 gulp.task('default', function() {
-    gulp.start('sass','css-concat');
+    gulp.start('sass','css-concat','browserify');
 });
