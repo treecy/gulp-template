@@ -1,0 +1,12 @@
+div.hn-header
+	nav.hn-navigation
+		ul.nav-list
+			li: a(href="/brand/")
+				img.en(src="./images/header_nav_brand.png" alt="brand")
+				span.line
+				img.ja(src="./images/header_nav_brand_ja.png" alt="ブランド")
+
+script.
+	$(document).ready(function($) {
+		hnModule('header').init();
+	});

@@ -1,32 +1,24 @@
 {
-  "name": "gulp-template",
-  "version": "0.1.1",
-  "description": "gulp with browserify",
-  "dependencies": {
-    "gulp-concat": "^2.6.0",
-    "gulp-less": "^3.0.3",
-    "gulp-minify-css": "^1.2.1",
-    "gulp-sourcemaps": "^1.5.2",
-    "jquery": "^2.1.4",
-    "require-dir": "^0.3.0"
+  "name": "gulp-set-up",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "browserify": {
-    "transform": [
-      "vueify"
-    ]
-  },
+  "author": "Liu Cui",
   "devDependencies": {
-    "babel-core": "^6.5.1",
-    "babel-plugin-transform-runtime": "^6.5.0",
-    "babel-preset-es2015": "^6.5.0",
-    "babel-runtime": "^5.8.35",
-    "browserify": "^13.0.0",
-    "gulp-browserify": "^0.5.1",
-    "gulp-debug": "^2.1.2",
-    "gulp-sass": "^2.0.4",
-    "vinyl-transform": "^1.0.0",
-    "vue-hot-reload-api": "^1.3.2",
-    "vueify": "^8.3.5",
-    "vueify-insert-css": "^1.0.0"
+    "browser-sync": "^1.3.7",
+    "gulp": "^3.8.8",
+    "gulp-add-src": "^0.2.0",
+    "gulp-autoprefixer": "1.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-inject": "^3.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.1.0",
+    "require-dir": "^0.3.0"
   }
 }
