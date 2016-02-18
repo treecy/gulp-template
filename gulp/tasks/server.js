@@ -18,7 +18,7 @@ gulp.task('browser-sync', ['static','sass', 'js' ,'jade'], function() {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch( config.css.sassSrc , ['sass']);
+    gulp.watch( config.src + '**/*.scss' , ['sass']);
     gulp.watch( config.html.allSrc , ['jade-rebuild']);
     gulp.watch( config.src + '**/*.js' , ['js-rebuild']);
 });

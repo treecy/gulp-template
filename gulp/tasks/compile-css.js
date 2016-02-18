@@ -15,17 +15,17 @@ gulp.task('sass', function () {
             includePaths: ['scss'],
             onError: browserSync.notify
         }))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(prefix( { browsers: ['last 2 versions'] } ))
         .pipe(gulp.dest(config.dest))
         .pipe(browserSync.reload({stream:true}));
 
-    gulp.src(config.widgetSrc)
+    return gulp.src(config.commonSrc)
         .pipe(sass({
             includePaths: ['scss'],
             onError: browserSync.notify
         }))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(concat('widget.css'))
+        .pipe(prefix( { browsers: ['last 2 versions'] } ))
+        .pipe(concat('common.css'))
         .pipe(gulp.dest( config.dest + 'static/'))
         .pipe(browserSync.reload({stream:true}));
 });

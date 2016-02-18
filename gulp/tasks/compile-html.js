@@ -6,14 +6,13 @@ var config = require('../config.js');
 var rename = require("gulp-rename");
 var replace = require('gulp-replace');
 var temp = './_temp/';
-global['_path'] = 'ee';
+global['_path'] = '';
 
 
 gulp.task('temp', function (callback) {
 	var stream1 = gulp.src(config.src + '_widgets/**/*.jade')
 		.pipe(rename(function (path) {
 			global['_path'] = path.dirname;
-			console.log(0);
 		}))
 		.pipe(replace('./images',function (str) {
 			return '/static/images/' + global['_path'];
@@ -40,7 +39,7 @@ gulp.task('jade',['temp'], function() {
 	        		if(filepath.slice(-2) == 'js'){
 	        			return '<script type="text/javascript" src="' + filepath.slice(4) +'"></script>';
 	        		}else if(filepath.slice(-3) == 'css'){
-	        			return '<link type="text/css" href="' + filepath.slice(4) +'">';
+	        			return '<link type="text/css" rel="stylesheet" href="' + filepath.slice(4) +'">';
 	        		}
 	        		
 	        	}

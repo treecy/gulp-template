@@ -10,7 +10,7 @@ var config = {
 	dest: dest,
     css:{
         'pageSrc': [src + '!(_)*/*.scss', src + '!(_)*/**/*.scss'],
-        'widgetSrc': [src + '_widgets/**/*.scss'],
+        'commonSrc': [src + '_common/css/*.scss', src + '_widgets/**/*.scss'],
         'dest': dest
     },
     html: {
@@ -20,6 +20,7 @@ var config = {
     },
     js: {
     	'src': [src + '**/*.js'],
+        'commonSrc': [src + '_widgets/**/*.js',src + '_common/js/*.js'],
     	'dest': dest + 'static/'
     }
 };
