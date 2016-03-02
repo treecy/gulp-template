@@ -37,8 +37,8 @@
     只有default Task，并且调取所有'./gulp/tasks'下的任务文件
 
 2. gulp 目录下存放所有的task及配置文件  
-    './gulp/config.js' 各种路径的配置文件  
-    './gulp/tasks'  具体的各种任务
+    `./gulp/config.js` 各种路径的配置文件  
+    `./gulp/tasks`  具体的各种任务
 
 ## 工程目录配置 ./app/
 
